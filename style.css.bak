@@ -1,0 +1,177 @@
+/*назначаем шрифт, размер шрифта, межстрочный интервал и цвет шрифта для сайт*/
+body
+{
+	margin:0;
+	font-family: 'Tahoma', sans-serif;
+	font-size: 22px;
+	font-style:normal;
+	line-height: 1.6;
+	color: #bb1c1c;
+}
+*,*:before, *:after {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,h7
+{
+	margin:0;
+}
+.container /*ограничиваем сайт сеткой(направляющие)*/
+{
+	width:100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.intro /*главный экран*/
+{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	width: 100%;
+	height: 100vh;
+	background: url("images/background.jpg") center no-repeat;
+	background-size: cover;
+}
+/*Главный Заголовок*/
+.intro_title
+{
+	font-family: 'Kristen ITC';
+	font-size: 90px;
+	color: #991111;
+	letter-spacing:2px;
+	text-align:center;
+	
+}
+/*блок для заголовка*/
+.intro_inner
+{
+	width:100%;
+	max-width:910px;
+	margin:0 auto;
+	line-height: 1.2;
+	text-align:center;
+}
+/*Подзаголовок*/
+.intro_subtitle
+{
+	font-size:36px;
+	color:#a11313;
+	letter-spacing:2px;
+	text-align:center;
+	margin-bottom:50px;
+	margin-top:30px;
+}
+.header /*шапка сайта*/
+{
+	padding-top:15px;
+	width:100%;
+	height:115px;
+	background: url("images/Photoled.jpg") center no-repeat;
+	top:0;
+	left:0;
+	right:0;
+	background-color:white;
+}
+/*логотип*/
+.header_logo
+{
+	font-size:48px;
+	font-family: 'Vivaldi', italic;
+	color:#850202;
+	font-weight:bold;
+}
+.header_inner
+{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+/*меню*/
+.nav
+{
+	font-size:24px;
+	letter-spacing:2px;
+	
+}
+/*ссылки для меню(навигация)*/
+.nav_link
+{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px;
+	text-decoration:none;
+	color:#453940;
+	transition: color 0.2s linear;
+}
+/*Изменение цвета ссылки при наведении*/
+.nav_link:hover
+{
+	color: #873158;
+}
+/*кнопка "получить скидку"*/
+.btn
+{
+	background-color:#870a21;
+	display: inline-block;
+	vertical-align: top;
+	margin-top:15px;
+	padding:30px 45px;
+	border-radius:50px;
+	color:white;
+	font-size: 22px;
+	text-decoration:none;
+	-moz-box-shadow:0 0 10px #ff869d;
+	-webkit-box-shadow:0 0 10px #ff869d;
+	box-shadow:0 0 10px #ff869d;
+	transition:background .2s linear, color .1s linear;
+}
+/*Изменение кнопки при наведении*/
+.btn:hover
+{
+	background-color:#ffabbb;
+	color:#873158;
+}
+/*стили для второго экрана*/
+.section
+{
+	background: url("images/topinghers.jpg") center no-repeat;
+	padding: 90px 0;
+	
+}
+.section_header
+{
+	margin-bottom:75px;
+	text-align:center;
+}
+
+.about
+{
+	background: url("images/Gorvotrr.jpg") center no-repeat;
+	display: flex;
+	justify-content: space-between;
+}
+.about_item
+{
+	border-radius:50px;
+	width: 330px;
+	height:430px;
+	background-color:#dcd1c7;
+	
+}
+.about_item_header
+{
+	text-align:center;
+}
+.about_img
+{
+	justify-content: center;
+	display:flex;
+	align-items:center;
+	margin-top:15px;
+	margin-bottom:40px;
+}
+.about_item_text
+{
+	text-align:center;
+	margin-top:0px;
+}

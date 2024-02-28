@@ -1,0 +1,169 @@
+/*назначаем шрифт, размер шрифта, межстрочный интервал и цвет шрифта для сайт*/
+body
+{
+	margin:0;
+	font-family: 'Tahoma', sans-serif;
+	font-size: 16px;
+	font-style:normal;
+	line-height: 1.6;
+	color: #000000;
+}
+*,*:before, *:after {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,h7
+{
+	margin:0;
+}
+.container /*ограничиваем сайт сеткой(направляющие)*/
+{
+	width:100%;
+	margin: 0 auto;
+}
+.intro /*главный экран*/
+{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	width: 100%;
+	height: 100vh;
+	background: url("images/fontop.jpg") center no-repeat;
+	background-size: cover;
+}
+/*Главный Заголовок*/
+.intro_title
+{
+	font-family: 'Kristen ITC';
+	font-size: 60px;
+	color: #991111;
+	letter-spacing:2px;
+	text-align:center;
+	
+}
+/*блок для заголовка*/
+.intro_inner
+{
+	width:100%;
+	max-width:1210px;
+	margin:0 auto;
+	line-height: 1.2;
+	text-align:center;
+}
+/*Подзаголовок*/
+.intro_subtitle
+{
+	font-size:36px;
+	color:#a11313;
+	letter-spacing:2px;
+	text-align:center;
+	margin-bottom:50px;
+	margin-top:30px;
+}
+.header /*шапка сайта*/
+{
+	padding-top:15px;
+	width:100%;
+	height:115px;
+	background: url("images/Photoled.jpg") center no-repeat;
+	top:0;
+	left:0;
+	right:0;
+	background-color:#1671cb;
+}
+
+.header_inner
+{
+	display:flex;
+	justify-content: end;
+	align-items:center;
+}
+
+.nav_link
+{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+	text-decoration:none;
+	color:#453940;
+	transition: color 0.2s linear;
+}
+
+/*стили для второго экрана*/
+.section
+{
+	background: url("images/trufon.jpg") center no-repeat;
+	padding: 150px 0;
+	
+}
+.section_header
+{
+	margin-bottom:75px;
+	text-align:center;
+}
+
+.about
+{
+	
+	display: flex;
+	justify-content: space-between;
+}
+.about_item
+{
+	background: url("images/dlafoto.jpg") center no-repeat;
+	border-radius:50px;
+	width: 330px;
+	height:430px;
+	background-color:#dcd1c7;
+	margin-top: 170px;
+	
+}
+.about_item_header
+{
+	text-align:center;
+}
+.about_img
+{
+	justify-content: center;
+	display:flex;
+	align-items:center;
+}
+.about_item_text
+{
+	text-align:center;
+	margin-top:0px;
+}
+
+.buttons-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.custom-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.custom-button:hover {
+  background-color: #f10e0e; 
+}
+
+.text-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #000000; 
+}
+
+.text-container p {
+  font-size: 16px;
+  color: #ffffff; 
+  
+  
